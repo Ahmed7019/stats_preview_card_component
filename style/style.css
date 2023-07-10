@@ -13,6 +13,7 @@
   --Dark_desaturated_blue: hsl(244, 38%, 16%);
   /* (accent) */
   --Soft_violet: hsl(277, 64%, 61%);
+  --dark-violet: hsl(278, 76%, 38%);
 
   /* ### Neutral */
   /* (main heading, stats) */
@@ -31,4 +32,92 @@
 @font-face {
     font-family: lexenddeca;
     src: url(../fonts/LexendDeca-VariableFont_wght.ttf);
+}
+
+body{
+  display: grid;
+  display: -moz-grid;
+  display: -ms-grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: 'inter';
+  background-color: var(--Very_dark_blue);
+}
+
+span {
+  color: var(--Soft_violet);
+}
+.parent {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+
+.left-side {
+  background-color: var(--Dark_desaturated_blue);
+  color: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.left-side p {
+  color: var(--Slightly_transparent_white);
+  line-break: normal;
+  line-height: 25px;
+}
+ul {
+  list-style: none;
+}
+
+.stats {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+
+}
+
+.stats-numbers {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  font-size: 24px;
+
+}
+
+.stats-details {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-size: small;
+  color: var(--Slightly_transparent_white);
+  letter-spacing: 1px;
+}
+
+.right-side {
+  position: relative;
+
+}
+
+.right-side img {
+  width: 100%;
+  height: 100%;
+}
+.right-side::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: var(--dark-violet);
+
 }
