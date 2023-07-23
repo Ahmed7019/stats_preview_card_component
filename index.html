@@ -13,31 +13,46 @@
     <main>
         <div class="parent">
             <div class="left-side">
-                <h1>Get <span>insights</span> that help <br>
-                   your business grow.</h1>
-
-                <p>Discover the benefits of data analytics
-                    and make <br> better decisions regarding revenue,
-                    customer <br> experience and overall efficiency.
-                </p>
+                <div class="main">
+                    <h1>Get <span>insights</span> that help <br>
+                    your business grow.</h1>
+                </div>
+                
+                <div class="content">
+                    <p>Discover the benefits of data analytics
+                        and make <br> better decisions regarding revenue,
+                        customer <br> experience and overall efficiency.
+                    </p>
+                </div>
                 <div class="stats">
-                    <ul class="stats-numbers">
-                        <li>10k+</li>
-                        <li>314</li>
-                        <li>12m+</li>
-                    </ul>
-                    <ul class="stats-details">
-                        <li>companies</li>
-                        <li>templates</li>
-                        <li>queries</li>
-                    </ul>
+                    <div>
+                        <ul>
+                            <li class="stats-numbers">10k+</li>
+                            <li class="stats-details">companies</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li class="stats-numbers">314</li>
+                            <li class="stats-details">templates</li>
+                        </ul>
+
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li class="stats-numbers">12m+</li>
+                            <li class="stats-details">queries</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="right-side">
                 <picture>
-                    <source media="(min-width:768px)" srcset="images/image-header-desktop.jpg">
-                    <source media="(max-width:768px)" srcset="images/image-header-mobile.jpg">
-                    <img src="images/image-header-desktop.jpg" alt="helpful image">
+                    <source srcset="images/image-header-desktop.jpg" media="min-width:768px">
+                    <source srcset="images/image-header-mobile.jpg" media="max-width:768px">
+                    <img src="images/image-header-desktop.jpg" alt="original image">
                 </picture>
             </div>
         </div>
